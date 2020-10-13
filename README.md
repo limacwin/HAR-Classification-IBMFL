@@ -1,4 +1,4 @@
-# HAR_Classification_FL
+# HAR-Classification-IBMFL
 
 #Please put the WISDM_ar_v1.1_raw.txt in the dataset/ directory before running the program
 
@@ -8,3 +8,5 @@
 #Team Member: Mahip Helekar
 #Team Member: Shaivik Dhavjekar
 #Team Member: Sampada Raikar
+
+
