@@ -1,0 +1,14 @@
+cd PSL-Internship\final\HAR_Classification_FL
+
+python generate_data.py -n 3 -d wisdm -pp 5000
+
+python generate_model_config.py -n 3 -d wisdm -p datasets/wisdm/random -m keras-cnn
+
+python -m ibmfl.aggregator.aggregator configs\keras-cnn\config_agg.yml
+
+python -m ibmfl.party.party configs\keras-cnn\config_party0.yml
+
+python -m ibmfl.party.party configs\keras-cnn\config_party1.yml
+
+python -m ibmfl.party.party configs\keras-cnn\config_party2.yml
+
